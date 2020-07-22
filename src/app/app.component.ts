@@ -1,3 +1,4 @@
+import { FarmerSearchAbstractProvider } from 'src/app/services/farmer-search-abstract-provider.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-application';
+  constructor(private myFarmerSearchProvider: FarmerSearchAbstractProvider) {}
+
 }

@@ -5,6 +5,6 @@ import { Farmer } from '../models/farmer.model';
 @Injectable({
   providedIn: 'root'
 })
-export abstract class FarmerSearchAbstractProviderService {
-  abstract searchFarmers(param: string): Observable <Farmer[]>;
+export abstract class FarmerSearchAbstractProvider {
+  abstract searchFarmers(param: string): Observable <any[]>;
 }

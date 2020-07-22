@@ -1,0 +1,14 @@
+mat-card {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  display: flex;
+  align-items: flex-end;
+}
+
+div mat-form-field {
+  margin: 0 10px;
+  flex: 1;
+}

@@ -1,3 +1,26 @@
-<p>
-  farmer-search-card works!
-</p>
+<mat-card>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput placeholder="Nome ou Documento" [formControl]="searchParam">
+        <button mat-icon-button matSuffix (click)="searchFarmer()">
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Remetente</mat-label>
+        <input matInput disabled [ngModel]="farmer?.name">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <mat-label>Doc #</mat-label>
+        <input matInput disabled [ngModel]="farmer?.document.documentNumber">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Endereço</mat-label>
+        <input matInput disabled [ngModel]="farmerAddress">
+      </mat-form-field>
+    </div>
+</mat-card>
